@@ -28,4 +28,5 @@ else {
 echo "ERROR";
 }
 mysql_close();
+
 ?>
