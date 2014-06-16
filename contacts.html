@@ -7,7 +7,9 @@
         height: 100%;
         margin: 0px;
         padding: 0px
-      }
+      
+	  .a{
+	  }
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script>
@@ -32,18 +34,24 @@
 		var moonMapType = new google.maps.ImageMapType(moonTypeOptions);
 
 		function initialize() {
-		  var myLatlng = new google.maps.LatLng(0, 0);
+		  var myLatlng = new google.maps.LatLng(22.024714, -163.295471);
 		  var mapOptions = {
 			center: myLatlng,
-			zoom: 1,
+			zoom: 5,
 			streetViewControl: false,
 			mapTypeControlOptions: {
 			  mapTypeIds: ['moon']
 			}
-		  };
+		};
 
 		  var map = new google.maps.Map(document.getElementById('map-canvas'),
 			  mapOptions);
+			
+			var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			title:"Noblecom"
+			});  
 		  map.mapTypes.set('moon', moonMapType);
 		  map.setMapTypeId('moon');
 		}
@@ -79,8 +87,6 @@
       </script>
   </head>
   <body>
-    <div id="map-canvas"></div>
-    <- TO DO fixed position marker for softuni->
-    <- enlager image on zoom ->
+		<div id="map-canvas"></div>
   </body>
 </html>
