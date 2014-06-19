@@ -10,8 +10,8 @@
 </head>
 <body>
 <!-- Site Header and Navigation -->
-<nav class="navbar navbar-default" role="navigation">
-	<div class="container-fluid">
+<nav class="navbar navbar-inverse" role="navigation">
+	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="target-collapse">
 				<span class="icon-bar"></span>
@@ -22,6 +22,15 @@
 		</div>
 
     <div class="collapse navbar-collapse" id="target-collapse">
+      <div class="row">
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Търсене">
+        </div>
+        <button type="submit" class="btn btn-default">Търси</button>
+      </form>
+      </div>
+    <div class="row">
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="#">Начало</a></li>
         <li><a href="#">Новини</a></li>
@@ -39,12 +48,8 @@
         <li><a href="#">Форум</a></li>
         <li><a href="#">Контакти</a></li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Търсене">
-        </div>
-        <button type="submit" class="btn btn-default">Търси</button>
-      </form>
+      </div>
+
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
