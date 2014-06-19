@@ -18,3 +18,29 @@
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
 .navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
+.btn-searchBtn {
+  background-color: #A070FF;
+  border-color: #A070FF;
+}
+.btn-searchBtn:hover,
+.btn-searchBtn:focus,
+.btn-searchBtn:active,
+.btn-searchBtn.active {
+  background-color: #8f57ff;
+  border-color: #7e3dff;
+}
+.btn-searchBtn.disabled:hover,
+.btn-searchBtn.disabled:focus,
+.btn-searchBtn.disabled:active,
+.btn-searchBtn.disabled.active,
+.btn-searchBtn[disabled]:hover,
+.btn-searchBtn[disabled]:focus,
+.btn-searchBtn[disabled]:active,
+.btn-searchBtn[disabled].active,
+fieldset[disabled] .btn-searchBtn:hover,
+fieldset[disabled] .btn-searchBtn:focus,
+fieldset[disabled] .btn-searchBtn:active,
+fieldset[disabled] .btn-searchBtn.active {
+  background-color: #A070FF;
+  border-color: #A070FF;
+}
