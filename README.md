@@ -3,4 +3,7 @@ Team-Tabaluga
 
 SoftUni Teamwork
 
-test test test
+Бавно зарежда страницата, 
+(failed)
+net::ERR_FILE_NOT_FOUND
+някакъв файл търси, може би е заради това.
