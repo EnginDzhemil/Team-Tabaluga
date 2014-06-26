@@ -44,3 +44,10 @@ fieldset[disabled] .btn-searchBtn.active {
   background-color: #A070FF;
   border-color: #A070FF;
 }
+
+.navbar-brand {
+  font-size: 30px;
+}
+body{
+  background-color: #e4e4e4;
+}
