@@ -1,9 +1,18 @@
-<?php
+<!DOCTYPE html>
 
-$host="localhost"; // Host name 
-$username=""; // Mysql username 
-$password=""; // Mysql password 
-$db_name="test"; // Database name 
+<html>
+<head>
+  <title>PHP Demo</title>
+  <link href="forum.css" rel="stylesheet">
+</head>
+<body>
+
+<?php
+	
+$host="localhost"; 
+$username="tabaluga";
+$password="tabaluga1";
+$db_name="tabaluga-forum";
 $tbl_name="forum_question"; // Table name 
 
 // Connect to server and select databse.
@@ -15,13 +24,13 @@ $sql="SELECT * FROM $tbl_name ORDER BY id DESC";
 $result=mysql_query($sql);
 ?>
 
-<table width="90%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+<table>
   <tr>
-    <td width="6%" align="center" bgcolor="#E6E6E6"><strong>#</strong></td>
-    <td width="53%" align="center" bgcolor="#E6E6E6"><strong>Topic</strong></td>
-    <td width="15%" align="center" bgcolor="#E6E6E6"><strong>Views</strong></td>
-    <td width="13%" align="center" bgcolor="#E6E6E6"><strong>Replies</strong></td>
-    <td width="13%" align="center" bgcolor="#E6E6E6"><strong>Date/Time</strong></td>
+    <td id="number"><strong>#</strong></td>
+    <td id="topic"><strong>Topic</strong></td>
+    <td id="views"><strong>Views</strong></td>
+    <td id="replies"><strong>Replies</strong></td>
+    <td id="date"><strong>Date/Time</strong></td>
   </tr>
 
 <?php
@@ -32,9 +41,9 @@ while($rows=mysql_fetch_array($result)){
   <tr>
     <td bgcolor="#FFFFFF"><? echo $rows['id']; ?></td>
     <td bgcolor="#FFFFFF"><a href="view_topic.php?id=<? echo $rows['id']; ?>"><? echo $rows['topic']; ?></a><BR></td>
-    <td align="center" bgcolor="#FFFFFF"><? echo $rows['view']; ?></td>
-    <td align="center" bgcolor="#FFFFFF"><? echo $rows['reply']; ?></td>
-    <td align="center" bgcolor="#FFFFFF"><? echo $rows['datetime']; ?></td>
+    <td class="tdtext"><? echo $rows['view']; ?></td>
+    <td class="tdtext"><? echo $rows['reply']; ?></td>
+    <td class="tdtext"><? echo $rows['datetime']; ?></td>
   </tr>
 
 <?php
@@ -44,6 +53,8 @@ mysql_close();
 ?>
 
   <tr>
-    <td colspan="5" align="right" bgcolor="#E6E6E6"><a href="create_topic.php"><strong>Create New Topic</strong> </a></td>
+    <td id="create"><a href="create_topic.php"><strong>Create New Topic</strong> </a></td>
   </tr>
 </table>
+</body>
+</html>
