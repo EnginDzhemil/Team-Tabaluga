@@ -3,73 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Tabaluga</title>
+    <title>Tabaluga University</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
-<!-- Site Header and Navigation -->
-<nav class="navbar navbar-inverse" role="navigation">
+<nav class="navbar navbar-inverse navbar-top" role="navigation">
 	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="target-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">  <img style="max-width:100px; margin-top: -13px;"
-             src="images/tabaluga-1.png" alt="logo">Team Tabaluga</a>
+			<div class="row">
+				<a class="navbar-brand" href="#">  <img style="max-width:100px; margin-top: -13px;max-height:100px;" src="images/tabaluga-1.png"  alt="logo">Tabaluga University</a>
+			</div>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="row">
+					<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Търсене">
+					</div>
+					<button class="btn btn-searchBtn">Търси</button>
+					</form>
+				</div>
+				<div class="row">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">Начало</a></li>
+						<li><a href="Teachers.html">Преподаватели</a></li>
+						<li><a href="LifeInSoftUni.html">Живота в SoftUni</a></li>
+						<li><a href="Scholarship.html">Стипенидия</a></li>
+						<li><a href="Courses.html">Курсове</a></li>
+						<li><a href="http://iliailiev.net/forum/main_forum.php">Форум</a></li>
+						<li><a href="contacts.html">Контакти</a></li>
+					</ul>
+				</div>
+			</div><!-- /.navbar-collapse -->
 		</div>
-
-    <div class="collapse navbar-collapse" id="target-collapse">
-      <div class="row">
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Търсене">
-        </div>
-        <button type="submit" class="btn btn-searchBtn">Търси</button>
-      </form>
-      </div>
-    <div class="row">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Начало</a></li>
-        <li><a href="#">Новини</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">За университета<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-           <li><a href="Teachers.html">Преподаватели</a></li>
-           <li><a href="LifeInSoftUni.html">Живота в SoftUni</a></li>
-           <li><a href="Scholarship.html">Стипенидия</a></li>
-          </ul>
-        </li>
-         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Обучения<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-          </ul>
-        </li>
-        <li><a href="#">За фирми</a></li>
-        <li><a href="http://iliailiev.net/forum/main_forum.php">Форум</a></li>
-        <li><a href="contacts.html">Контакти</a></li>
-      </ul>
-      </div>
-
-    </div>
-  </div>
+	</div>
 </nav>
 
 	<div class="container">
-  </div>
+    </div>
 
 <nav class="navbar navbar-inverse navbar-bottom">
-           <div class="container">
-           <div class="navbar navbar-right">
-<button class="btn btn-default">Petar Genov</button> 
-<button class="btn btn-default">Engin Dzhemil</button> 
-<button class="btn btn-default">Iliya Iliev</button> 
-<button class="btn btn-default">Desislav Delchev</button> 
-</div>
-  </div>
+	<div class="container">
+		<div class="navbar navbar-right">
+			<button class="btn btn-default">Petar Genov</button> 
+			<button class="btn btn-default">Engin Dzhemil</button> 
+			<button class="btn btn-default">Iliya Iliev</button> 
+			<button class="btn btn-default">Desislav Delchev</button> 
+		</div>
+	</div>
 </nav>
 
 <script src="js/jquery-2.1.1.min.js"></script>

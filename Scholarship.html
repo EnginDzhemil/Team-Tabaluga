@@ -11,64 +11,54 @@
 </head>
 <body>
 <!-- Site Header and Navigation -->
-<nav class="navbar navbar-inverse" role="navigation">
+<nav class="navbar navbar-inverse navbar-top" role="navigation">
     <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="target-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">  <img style="max-width:100px; margin-top: -13px;"
-             src="images/tabaluga-1.png" alt="logo">Team Tabaluga</a>
-        </div>
+            <div class="row">
+                <a class="navbar-brand" href="#">  <img style="max-width:100px; margin-top: -13px;max-height:100px;" src="images/tabaluga-1.png"  alt="logo">Tabaluga University</a>
+            </div>
+            </div>
 
-    <div class="collapse navbar-collapse" id="target-collapse">
-      <div class="row">
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Търсене">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="row">
+                    <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Търсене">
+                    </div>
+                    <button type="submit" class="btn btn-searchBtn">Търси</button>
+                    </form>
+                </div>
+                <div class="row">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Начало</a></li>
+                        <li><a href="Teachers.html">Преподаватели</a></li>
+                        <li><a href="LifeInSoftUni.html">Живота в SoftUni</a></li>
+                        <li class="active"><a href="Scholarship.html">Стипенидия</a></li>
+                        <li><a href="Courses.html">Курсове</a></li>
+                        <li><a href="http://iliailiev.net/forum/main_forum.php">Форум</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+            </div><!-- /.navbar-collapse -->
         </div>
-        <button type="submit" class="btn btn-searchBtn">Търси</button>
-      </form>
-      </div>
-    <div class="row">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Начало</a></li>
-        <li><a href="#">Новини</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">За университета<b class="caret"></b></a>
-          <ul  class="dropdown-menu">
-           <li><a href="Teachers.html">Преподаватели</a></li>
-           <li><a href="LifeInSoftUni.html">Живота в SoftUni</a></li>
-           <li class="active"><a href="Scholarship.html">Стипенидия</a></li>
-          </ul>
-        </li>
-         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Обучения<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-          </ul>
-        </li>
-        <li><a href="#">За фирми</a></li>
-        <li><a href="http://iliailiev.net/forum/main_forum.php">Форум</a></li>
-        <li><a href="contacts.html">Контакти</a></li>
-      </ul>
-      </div>
-
     </div>
-  </div>
 </nav>
+
         <div class="jumbotron">
            <div class="container">
             <h2>How Nakov decides, who will get scholarship!</h2>
             </div>
         </div>
-    <div class="container center-block">
+    <div class="container">
 <div class="center-block" style="width:500px;">
-        <div class="row">
-
-
-        </div>
 <table class="table">
         <thead>
           <tr>
@@ -84,13 +74,21 @@
 
           </tr>
           <tr>
-            <td>            <div class="dice1">Dice 1:</div></td>
-            <td>            <div id="die1" class="dice">0</div></td>
+            <td>            
+                <div class="dice1">Dice 1:</div>
+            </td>
+            <td>            
+            <div id="die1" class="dice">0</div>
+            </td>
 
           </tr>
           <tr>
-            <td>                        <div class="dice1">Dice 2:</div></td>
-            <td>            <div id="die2" class="dice">0</div></td>
+            <td>                       
+                <div class="dice1">Dice 2:</div>
+            </td>
+            <td>            
+                <div id="die2" class="dice">0</div>
+            </td>
           </tr>
                     <tr>
             <th colspan="2">
@@ -98,19 +96,15 @@
             </th>
             </tr>
             <tr>
-            <th colspan="2">
+            <td colspan="2">
            <div  id="status"></div>
-            </th>
-          </tr>
-                      <tr>
-            <th colspan="2">
-            </th>
+            </td>
           </tr>
         </tbody>
       </table>
         <div class="row">
-            <img class="img-responsive scolar" style="visibility:hidden;" src="images/scholarship/win.png" id="win" alt="win">
-            <img class="img-responsive" style="visibility:hidden;" src="images/scholarship/water.png" id="water" alt="lose">
+            <img class="img-responsive scolar" style="visibility:hidden;" src="images/scholarship/winner.png" id="win" alt="win">
+            <img class="img-responsive" style="visibility:hidden;;" src="images/scholarship/water.png" id="water" alt="lose">
         </div>
 </div>
         <script src="js/Scholarship.js"></script>
