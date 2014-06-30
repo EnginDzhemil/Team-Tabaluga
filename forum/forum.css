@@ -1,0 +1,50 @@
+table {
+	width: 90%;
+	border: 0px;
+	align: center;
+	cellpadding: 3;
+	cellspacing: 1;
+	background-color: pink;
+	}
+
+#number {
+	width: 6%;
+	align: center;
+	background-color: pink;
+}
+
+#topic {
+	width: 53%;
+	align: center;
+	background-color: pink;
+	
+}
+
+#views{
+	width:15%;
+	align: center;
+	background-color: pink;
+}
+
+#replies{
+	width: 13%;
+	align: center;
+	background-color: pink;
+}
+
+#date{
+	width: 13%;
+	align: center;
+	background-color: pink;
+}
+
+.tdtext{
+	text-align: center;
+	background-color: #FFFFFF;
+}
+
+#create{ 
+	column-span: 5;
+	text-align: right;
+	background-color: #E6E6E6
+}
