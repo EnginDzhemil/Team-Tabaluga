@@ -20,7 +20,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">  <img style="max-width:100px; margin-top: -13px;"
-             src="images/tabaluga-1.png">Team Tabaluga</a>
+             src="images/tabaluga-1.png" alt="logo">Team Tabaluga</a>
         </div>
 
     <div class="collapse navbar-collapse" id="target-collapse">
@@ -40,7 +40,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">За университета<b class="caret"></b></a>
           <ul  class="dropdown-menu">
            <li><a href="Teachers.html">Преподаватели</a></li>
-           <li><a href="Life in SoftUni.html">Живота в SoftUni</a></li>
+           <li><a href="LifeInSoftUni.html">Живота в SoftUni</a></li>
            <li class="active"><a href="Scholarship.html">Стипенидия</a></li>
           </ul>
         </li>
@@ -73,7 +73,7 @@
         <thead>
           <tr>
             <th colspan="2">
-            <span  class="student1" id="game"><h1>Let's Play some DICE!</h1></span>
+            <span  class="student1" id="game">Let's Play some DICE!</span>
             </th>
           </tr>
         </thead>
@@ -92,27 +92,25 @@
             <td>                        <div class="dice1">Dice 2:</div></td>
             <td>            <div id="die2" class="dice">0</div></td>
           </tr>
-        </tbody>
-                <tfooter>
-          <tr>
+                    <tr>
             <th colspan="2">
             <button class="btn btn-searchBtn btnScolarship" onclick="rollDice()" >Scolarship?</button>    
             </th>
             </tr>
             <tr>
             <th colspan="2">
-            <h2 id="status"></h2>  
+           <div  id="status"></div>
             </th>
           </tr>
                       <tr>
             <th colspan="2">
             </th>
           </tr>
-        </tfooter>
+        </tbody>
       </table>
         <div class="row">
-            <img class="img-responsive scolar" style="visibility:hidden;" src="images/scholarship/win.png" id="win">
-            <img class="img-responsive" style="visibility:hidden;" src="images/scholarship/water.png" id="water">
+            <img class="img-responsive scolar" style="visibility:hidden;" src="images/scholarship/win.png" id="win" alt="win">
+            <img class="img-responsive" style="visibility:hidden;" src="images/scholarship/water.png" id="water" alt="lose">
         </div>
 </div>
         <script src="js/Scholarship.js"></script>
