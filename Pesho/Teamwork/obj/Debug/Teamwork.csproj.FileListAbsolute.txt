@@ -1,5 +1,0 @@
-C:\Users\user\Desktop\SoftUni\HTML & CSS\TeamWork\Teamwork\Teamwork\bin\Teamwork.dll
-C:\Users\user\Desktop\SoftUni\HTML & CSS\TeamWork\Teamwork\Teamwork\bin\Teamwork.pdb
-C:\Users\user\Desktop\SoftUni\HTML & CSS\TeamWork\Teamwork\Teamwork\obj\Debug\Teamwork.csprojResolveAssemblyReference.cache
-C:\Users\user\Desktop\SoftUni\HTML & CSS\TeamWork\Teamwork\Teamwork\obj\Debug\Teamwork.dll
-C:\Users\user\Desktop\SoftUni\HTML & CSS\TeamWork\Teamwork\Teamwork\obj\Debug\Teamwork.pdb
