@@ -7,35 +7,6 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="css/Courses.css">
-<script type="text/javascript">
-    function show(id1){
-        if(id1==ninja){
-document.getElementById('ninja').style.visibility = 'visible';
-document.getElementById('god').style.visibility = 'hidden';
-document.getElementById('strong').style.visibility = 'hidden';
-document.getElementById('bad').style.visibility = 'hidden';
-        }
-        else if(id1==god){
-document.getElementById('god').style.visibility = 'visible';
-document.getElementById('ninja').style.visibility = 'hidden';
-document.getElementById('strong').style.visibility = 'hidden';
-document.getElementById('bad').style.visibility = 'hidden';
-        }
-        else if(id1==strong){
-document.getElementById('strong').style.visibility = 'visible';
-document.getElementById('ninja').style.visibility = 'hidden';
-document.getElementById('bad').style.visibility = 'hidden';
-document.getElementById('god').style.visibility = 'hidden';
-        }
-        else if(id1==bad){
-document.getElementById('bad').style.visibility = 'visible';
-document.getElementById('ninja').style.visibility = 'hidden';
-document.getElementById('strong').style.visibility = 'hidden';
-document.getElementById('god').style.visibility = 'hidden';
-        }
-
-    }
-</script>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-top" role="navigation">
@@ -65,7 +36,7 @@ document.getElementById('god').style.visibility = 'hidden';
                 </div>
                 <div class="row">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Начало</a></li>
+                        <li><a href="index.html">Начало</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">За университета <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
@@ -74,10 +45,10 @@ document.getElementById('god').style.visibility = 'hidden';
                                 <li><a href="Scholarship.html">Стипенидия</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
+                        <li class="dropdown active">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Професии <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="ninja.html">Програмист-нинджа</a></li>
+                                <li class="active"><a href="ninja.html">Програмист-нинджа</a></li>
                                 <li><a href="god.html">Programming God</a></li>
                                 <li><a href="strong.html">Силен програмист</a></li>
                                 <li><a href="bad.html">Некадърен програмист</a></li>
@@ -94,37 +65,20 @@ document.getElementById('god').style.visibility = 'hidden';
 </nav>
         <div class="jumbotron">
            <div class="container">
-            <h2>Професии</h2>
+            <h2>Програмист-нинджа</h2>
             </div>
         </div>
 
     <div class="container">
 
-<div class="prof center-block" style="width:960px;">
-<button class="btn btn-default" onclick="show(ninja);">Програмист-нинджа</button>
-<button class="btn btn-default" onclick="show(god);">Programming God</button>
-<button class="btn btn-default" onclick="show(strong);">Силен програмист</button>
-<button class="btn btn-default" onclick="show(bad);">Некадърен програмист</button>
-<div id="ninja" style="visibility:hidden;splay:block;">
+<div class="prof col-xs-12">
+
+<div id="ninja">
     <p>
     Програмистът-нинджа е специализиран в разработването на съвремени софтуерни приложения, но също така има солидни умения по Таекуондо, Нинджуцу, Жиу-Жицу и българския му вариант Живу-Жицу. След като преминете успешно първо ниво ще можете да си изберете една от следните 3 специализации: Черна Нинджа (зла), Бяла Нинджа (добра) или Червена Нинджа (кръвожадна)
     </p>
 </div>
-<div id="god" style="visibility:hidden;">
-    <p>
-    Искате да станете Бог в програмирането? Няма проблем! Ние ще ви направим. В нива #1, #2 и #3 ще се преподават единствено скандинавски езици за програмиране, защото на тези езици говорят Тор и Один. Няма как да станете Бог без Скандинавски!
-    </p>
-</div>
-<div id="strong" style="visibility:hidden;">
-    <p>
-    Тази професия е за тези от вас, които искат да станат наистина силни програмисти. При нас ще заякнете здраво. В нашата зала от сутрин до вечер ще вдигате щанги и дъмбели, ще правите упражнения за бицепс и трицепс, и в почивките ще решавате задачи по Java и С#.
-    </p>
-</div>
-<div id="bad" style="visibility:hidden;">
-    <p>
-    Ние можем да ви обучим и за професия Некадърен Програмист. Не се учудвайте - бизнесът наистина търси такива кадри. Те са по-евтини и затова са предпочитани от работодателите. Добрите кодери имат прекалено високи финансови изисквания и са толкова нахални, че искат да им се заплаща извънредния труд. Затова фирмите имат нужда от некомпетентни специалисти. Но не се притеснявайте - ние ще ви подготвим за пазара на труда! Обучението в тази специалност трае 10 години и ще изучаваме езиците, които са били модерни през 60-те години на миналия век. Така ще сме сигурни, че като завършите нашия университет научените технологии ще са достатъчно остарели.
-    </p>
-</div>
+
     </div>
     </div>
 
