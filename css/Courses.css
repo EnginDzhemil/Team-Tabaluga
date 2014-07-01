@@ -1,19 +1,6 @@
 h1 {
     text-align:center;
 }
-.jumbotron {
-    margin-bottom: 0px;
-    background-image: url(../images/decisions3.png);
-    color: white;
-    background-position: 0% 25%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-}
-.jumbotron h2{
-    color: #FFF;
-    text-shadow: 3px 3px 5px rgba(150, 150, 150, 1);
-}
 .prof{
 
 

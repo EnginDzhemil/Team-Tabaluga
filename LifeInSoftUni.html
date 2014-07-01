@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life in SoftUni</title>
+    <title>Life in TabtUni</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="css/Slider.css" rel="stylesheet" />
@@ -33,15 +33,29 @@
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Търсене">
           </div>
-          <button type="submit" class="btn btn-searchBtn">Търси</button>
+          <button class="btn btn-searchBtn">Търси</button>
           </form>
         </div>
         <div class="row">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html">Начало</a></li>
-            <li><a href="Teachers.html">Преподаватели</a></li>
-            <li class="active"><a href="LifeInSoftUni.html">Живота в SoftUni</a></li>
-            <li><a href="Scholarship.html">Стипенидия</a></li>
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">За университета <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="Teachers.html">Преподаватели</a></li>
+                <li class="active"><a href="LifeInSoftUni.html">Живота в TabUni</a></li>
+                <li><a href="Scholarship.html">Стипенидия</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Професии <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="ninja.html">Програмист-нинджа</a></li>
+                <li><a href="god.html">Programming God</a></li>
+                <li><a href="strong.html">Силен програмист</a></li>
+                <li><a href="bad.html">Некадърен програмист</a></li>
+              </ul>
+            </li>
             <li><a href="Courses.html">Курсове</a></li>
             <li><a href="http://iliailiev.net/forum/main_forum.php">Форум</a></li>
             <li><a href="contacts.html">Контакти</a></li>
@@ -51,17 +65,27 @@
     </div>
   </div>
 </nav>
-
+        <div class="jumbotron">
+           <div class="container">
+            <h2>Life in SoftUni</h2>
+            </div>
+        </div>
     <div class="container">
-    <h1>Life in SoftUni</h1>
-    <img class="slider" src="images/slider/download.jpg" name="slide">
+    <div class="center-block" style="width:500px; margin-top:30px;">
+    <img src="images/slider/image1.jpg" name="slide">
+    </div>
     <script type="text/javascript" src="js/Slider.js"></script>
   </div>
   
-<nav class="navbar navbar-inverse navbar-fixed-bottom">
-    <p>
-    Petar Genov, Engin Dzhemil, Iliya Iliev, Desislav Delchev
-  </p>
+<nav class="navbar navbar-inverse navbar-bottom">
+           <div class="container">
+           <div class="navbar navbar-right">
+<button class="btn btn-default">Petar Genov</button> 
+<button class="btn btn-default">Engin Dzhemil</button> 
+<button class="btn btn-default">Iliya Iliev</button> 
+<button class="btn btn-default">Desislav Delchev</button> 
+</div>
+  </div>
 </nav>
 
 <script src="js/jquery-2.1.1.min.js"></script>
