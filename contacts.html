@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	<meta charset="UTF-8">
-    <title>Image map types</title>
-    <style>
-	#mainarea{
-		width:924px;
-		margin:30px 0;
-		float:left;
-		}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabaluga University</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/Courses.css">
+	<style>
 		
     #map-canvas {
 		position:relative;
 		float:right;
-		width: 700px;
-		height: 400px;
+		width: 800px;
+		height: 390px;
       }
 	textarea{
-		width: 715px;
-		height: 100px;
+		width: 815px;
+		height: 50px;
+		color:black;
 	}
+
 	 </style>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+</head>
+<body>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script>
 		var moonTypeOptions = {
 		  getTileUrl: function(coord, zoom) {
@@ -41,6 +44,10 @@
 		  name: 'Moon'
 		};
 
+		//custom marker
+		var iconBase = 'images/';
+		
+		
 		var moonMapType = new google.maps.ImageMapType(moonTypeOptions);
 
 		function initialize() {
@@ -60,7 +67,8 @@
 			var marker = new google.maps.Marker({
 			position: myLatlng,
 			map: map,
-			title:"Noblecom"
+			icon: iconBase + 'softuni1.png'
+			//title:"Noblecom"
 			});  
 		  map.mapTypes.set('moon', moonMapType);
 		  map.setMapTypeId('moon');
@@ -95,37 +103,114 @@
 		google.maps.event.addDomListener(window, 'load', initialize);
 
       </script>
-  </head>
-  <body>
-  <div id="mainarea">
-      <div id="map-canvas"></div>
-      <h2>За контакти:</h2>
-      <div><strong>Адрес:</strong></div>
-      <div>Moon</div>
-      <div>Кратер 237-6BBC</div>
-      <div><strong>Телефон:</strong> Nak000000v</div>
-	  <div><strong>e-mail:</strong> MasterOfDisaster@SoftMuni.moon</div>
-	  <br />
-      <br />
-      <div><strong>Работно време:</strong></div>
-      <div>Non-Stop</div>
-	  <br />
-      <form action="#">
-          <p>
-              <strong>Name :</strong><br/>
-              <input type="text" class="input" />
-          </p>
-          <p>
-              <strong>E-mail:</strong><br/>
-              <input type="text" class="input"  />
-          </p>
-          <p>
-              <strong>Message:</strong><br/>
-              <textarea rows="10" cols="15" class="input"></textarea>
-          </p>
-          <input type="button" class="button1" value="Submit"/>
-      </form>
+<!-- Site Header and Navigation -->
+<nav class="navbar navbar-inverse navbar-top" role="navigation">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<div class="row">
+				<a class="navbar-brand" href="#">  <img style="max-width:100px; margin-top: -13px;max-height:100px;" src="images/tabaluga-1.png"  alt="logo">Tabaluga University</a>
+			</div>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="row">
+					<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Търсене">
+					</div>
+					<button class="btn btn-searchBtn">Търси</button>
+					</form>
+				</div>
+				<div class="row">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Начало</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">За университета <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="Teachers.html">Преподаватели</a></li>
+								<li><a href="LifeInSoftUni.html">Живота в SoftUni</a></li>
+								<li><a href="Scholarship.html">Стипенидия</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Професии <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="ninja.html">Програмист-нинджа</a></li>
+								<li><a href="god.html">Programming God</a></li>
+								<li><a href="strong.html">Силен програмист</a></li>
+								<li><a href="bad.html">Некадърен програмист</a></li>
+							</ul>
+						</li>
+						<li class="active"><a href="Courses.html">Курсове</a></li>
+						<li><a href="http://iliailiev.net/forum/main_forum.php">Форум</a></li>
+						<li><a href="contacts.html">Контакти</a></li>
+					</ul>
+				</div>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</div>
+</nav>
+
+<div class="jumbotron">
+           <div class="container">
+			<div id="mainarea">
+			  <div id="map-canvas">
+				<!-- <div id="sof-image">	
+					<img src="images/softuni.png" alt="#" />
+				</div> -->
+			  </div>
+				  <h2>За контакти:</h2>
+				  <div><strong>Адрес:</strong></div>
+				  <div>Moon</div>
+				  <div>Кратер 237-6BBC</div>
+				  <div><strong>Телефон:</strong> Nak000000v</div>
+				  <div><strong>e-mail:</strong> MasterOfDisaster@SoftMuni.moon</div>
+				  <br />
+				  <div><strong>Работно време:</strong></div>
+				  <div>Non-Stop</div>
+				  <br />
+				  <form action="#">
+					  <p>
+						  <strong>Name :</strong><br/>
+						  <input type="text" class="input" />
+					  </p>
+					  <p>
+						  <strong>E-mail:</strong><br/>
+						  <input type="text" class="input"  />
+					  </p>
+					  <p>
+						  <strong>Message:</strong><br/>
+						  <textarea rows="6" cols="10" class="input"></textarea>
+					  </p>
+					  <input type="button" class="button1" value="Submit"/>
+				  </form>
 		
-  </div>
-  </body>
+				</div>
+            </div>
+        </div>
+
+	
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+	<div class="container">
+		<div class="navbar navbar-right">
+			<button class="btn btn-default">Petar Genov</button> 
+			<button class="btn btn-default">Engin Dzhemil</button> 
+			<button class="btn btn-default">Iliya Iliev</button> 
+			<button class="btn btn-default">Desislav Delchev</button> 
+		</div>
+	</div>
+</nav>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
 </html>
