@@ -1,0 +1,6 @@
+﻿.polaroid img {
+border-radius: 11px; 
+-moz-border-radius: 11px; 
+-webkit-border-radius: 11px; 
+border: 50px groove #A070FF;
+}
