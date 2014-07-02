@@ -10,15 +10,23 @@
 
 .flip3D > .front{
      position: absolute;
-     -webkit-transform: perspective( 600px ) rotateY( 0deg );
+    -webkit-transform: perspective( 600px ) rotateY( 0deg );
+    -o-transform: perspective( 600px ) rotateY( 0deg );
+    -ms-transform: perspective( 600px ) rotateY( 0deg );
+    -moz-transform: perspective( 600px ) rotateY( 0deg );
      transform: perspective( 600px ) rotateY( 0deg );
      background: black;
      width: 160px;
      height: 160px;
      border-radius: 7px;
      -webkit-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
      backface-visibility: hidden;
-     transition: -webkit-transform .5s linear 0s;
+    transition: -o-transform .5s linear 0s;
+    transition: -ms-transform .5s linear 0s;
+    transition: -moz-transform .5s linear 0s;
      transition: transform .5s linear 0s;
  }
 
