@@ -10,16 +10,16 @@
 	<style>
 		
     #map-canvas {
-		position:relative;
-		float:right;
-		width: 800px;
 		height: 390px;
       }
-	textarea{
-		width: 815px;
-		height: 50px;
-		color:black;
+	input{
+		max-width: 300px;
 	}
+	
+	textarea{
+		max-width: 600px;
+	}
+	
 
 	 </style>
 </head>
@@ -94,11 +94,7 @@
 <div class="jumbotron">
            <div class="container">
 			<div id="mainarea">
-			  <div id="map-canvas">
-				 <div id="sof-image">	
-					<img src="images/zala.png" alt="#" />
-				</div> 
-			  </div>
+			<div class="col-sm-6">
 				  <h2>За контакти:</h2>
 				  <div><strong>Адрес:</strong></div>
 				  <div>Moon</div>
@@ -109,27 +105,35 @@
 				  <div><strong>Работно време:</strong></div>
 				  <div>Non-Stop</div>
 				  <br />
+</div>
+			<div class="col-sm-6">
 				  <form action="#">
 					  <p>
 						  <strong>Име :</strong><br/>
-						  <input type="text" class="input" />
+						  <input type="text" class="input form-control" />
 					  </p>
 					  <p>
 						  <strong>E-mail:</strong><br/>
-						  <input type="text" class="input"  />
+						  <input type="text" class="input form-control"  />
 					  </p>
 					  <p>
 						  <strong>Съобщение:</strong><br/>
-						  <textarea rows="6" cols="10" class="input"></textarea>
+						  <textarea class="input form-control"></textarea>
 					  </p>
 					  <input type="button" class="btn btn-searchBtn" value="Изпрати"/>
 				  </form>
-		
+		</div>
 				</div>
             </div>
         </div>
 
-	
+	<div class="container-fluid">
+	<div id="map-canvas">
+				 <div id="sof-image">	
+					<img src="images/zala.png" alt="#" />
+				</div> 
+			  </div>
+	</div>
 
 <nav class="navbar navbar-inverse navbar-fixed-bottom">
 	<div class="container">
