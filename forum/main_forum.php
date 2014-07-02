@@ -89,7 +89,7 @@
 		$result=mysql_query($sql);
 		?>
 
-		<table>
+		<table class="table-hover">
 		  <tr>
 			<td id="number"><strong>#</strong></td>
 			<td id="topic"><strong>Topic</strong></td>
@@ -104,7 +104,7 @@
 		while($rows=mysql_fetch_array($result)){
 		?>
 		  <tr>
-			<td bgcolor="#FFFFFF"><? echo $rows['id']; ?></td>
+			<td ><? echo $rows['id']; ?></td>
 			<td bgcolor="#FFFFFF"><a href="view_topic.php?id=<? echo $rows['id']; ?>"><? echo $rows['topic']; ?></a><BR></td>
 			<td class="tdtext"><? echo $rows['view']; ?></td>
 			<td class="tdtext"><? echo $rows['reply']; ?></td>
