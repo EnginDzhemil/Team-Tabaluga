@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabaluga University</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <!-- Site Header and Navigation -->
 <nav class="navbar navbar-inverse navbar-top" role="navigation">
-	<div class="container">
+	<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
 			<span class="sr-only">Toggle navigation</span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
@@ -23,17 +23,8 @@
 				<a class="navbar-brand" href="#">  <img style="max-width:100px; margin-top: -13px;max-height:100px;" src="images/tabaluga-1.png"  alt="logo">Tabaluga University</a>
 			</div>
 			</div>
-
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<div class="row">
-					<form class="navbar-form navbar-right" role="search">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Търсене">
-					</div>
-					<button class="btn btn-searchBtn">Търси</button>
-					</form>
-				</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
 				<div class="row">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a href="index.html">Начало</a></li>
@@ -69,9 +60,9 @@
 							</ul>
 					</ul>
 				</div>
+				</div>
 			</div><!-- /.navbar-collapse -->
 		</div>
-	</div>
 </nav>
 
 <div class="jumbotron">
@@ -82,8 +73,8 @@
             </div>
         </div>
 
-	<div class="container" style="min-height:400px;">
-	<div>
+	<div class="container content">
+	<div id="news-content">
         <div class="col-sm-6">
                 <h3><img src="images/rocket.png" alt="Rocket track курс" width="20" height="40" />   Rocket Track курсове</h3>
                 <div>
@@ -106,7 +97,6 @@
                   A Mars landing is a landing of a spacecraft on the surface of Mars. Of multiple attempts Mars landings by robotic, unmanned spacecraft, seven were successful. There have also been studies for a possible manned mission to Mars, including a landing, but none have been attempted
                 </div>
                 </div>
-        </div>
         <div class="col-sm-6">
             <h3><img src="images/news.jpg" alt="Rocket track курс" width="40" height="40" />   Новини</h3>
 			<div class="article">
@@ -130,10 +120,9 @@
 	            </div>
 			</div>
     </div>
+    </div>
 </div>
-
-</div>
-    <nav class="navbar navbar-inverse navbar-static-bottom" id="footer">
+<nav class="navbar navbar-inverse navbar-static-bottom" role="navigation">
            <div class="container">
 <a href="https://softuni.bg/users/profile/show/genov1824" class="btn btn-default">Petar Genov</a> 
 <a href="https://softuni.bg/users/profile/show/n_joy" class="btn btn-default">Engin Dzhemil</a> 

@@ -46,6 +46,10 @@ fieldset[disabled] .btn-searchBtn.active {
   border-color: #A070FF;
 
 }
+.body{
+  background-color: #640AC8;
+}
+
 
 .jumbotron {
     margin-bottom: 0px;
@@ -62,6 +66,10 @@ fieldset[disabled] .btn-searchBtn.active {
 }
 .navbar-brand {
   font-size: 30px;
+}
+
+.navbar-top{
+  min-height: 110px;
 }
 
  .courses h4{
@@ -94,15 +102,30 @@ padding-right: 15px;
     border:2px solid black;
 }
 
-#footer{
-  padding:0px;
-  margin:10px 0px 0px 0px;
+.navbar-static-bottom{
+padding: 0px;
+margin: 0px;
+}
+#news-content{
+  min-height: 400px;
 }
 
 @media(max-width:767px){
 .navbar-brand {
   padding-bottom: 100px;
-
 }
+}
+@media(max-width:1000px){
+#navbar-collapse-1{
+padding-top: 100px;
+}
+}
+@media(max-width:768px){
+#navbar-collapse-1{
+padding-top: 0px;
+}
+}
+
+
 
 
