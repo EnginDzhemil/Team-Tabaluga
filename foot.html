@@ -6,101 +6,102 @@
     <title>Tabaluga University</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/Courses.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
 </head>
 <body>
+   <div id="wrap">
 <nav class="navbar navbar-inverse navbar-top" role="navigation">
     <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
             </button>
             <div class="row">
                 <a class="navbar-brand" href="#">  <img style="max-width:100px; margin-top: -13px;max-height:100px;" src="images/tabaluga-1.png"  alt="logo">Tabaluga University</a>
             </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <div class="row">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Начало</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">За университета <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="teachers.html">Преподаватели</a></li>
+                                <li><a href="life_in_tabuni.html">Живота в TabtUni</a></li>
+                                <li><a href="scholarship.html">Стипенидия</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Професии <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="ninja.html">Програмист-нинджа</a></li>
+                                <li><a href="god.html">Programming God</a></li>
+                                <li><a href="strong.html">Силен програмист</a></li>
+                                <li><a href="bad.html">Некадърен програмист</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Обучения <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation" class="dropdown-header">Курсове</li>
+                                <li><a href="bitwise.html">Побитово клатене</a></li>
+                                <li class="active"><a href="foot.html">Foot Programming</a></li>
+                                <li><a href="teamwork.html">Teamwork и личностни умения</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">Rocket Track курсове</li>
+                                <li><a href="moon.html">Moon Landing</a></li>
+                                <li><a href="mars.html">Mars Landing</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://iliailiev.net/forum/main_forum.php">Форум</a></li>
+                                <li><a href="contacts.html">Контакти</a></li>
+                            </ul>
+                </div>
+            </div>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <div class="row">
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Търсене">
-                    </div>
-                    <button class="btn btn-searchBtn">Търси</button>
-                </form>
-            </div>
-            <div class="row">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Начало</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">За университета <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="Teachers.html">Преподаватели</a></li>
-                            <li><a href="LifeInSoftUni.html">Живота в SoftUni</a></li>
-                            <li><a href="Scholarship.html">Стипенидия</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Професии <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li class="active"><a href="ninja.html">Програмист-нинджа</a></li>
-                            <li><a href="god.html">Programming God</a></li>
-                            <li><a href="strong.html">Силен програмист</a></li>
-                            <li><a href="bad.html">Некадърен програмист</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Курсове<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="Teamwork.html">Teamwork и личностни умения</a></li>
-                            <li><a href="bitwise.html">Побитово клатене</a></li>
-                            <li><a href="foot.html">Foot Programming</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="http://iliailiev.net/forum/main_forum.php">Форум</a></li>
-                    <li><a href="contacts.html">Контакти</a></li>
-                </ul>
-            </div>
-        </div><!-- /.navbar-collapse -->
-    </div>
-    </div>
 </nav>
 <div class="jumbotron">
     <div class="container">
-        <h2>Foot Programming</h2>
+        <h1>Foot Programming</h1>
     </div>
 </div>
 
 <div class="container">
 
-    <div class="prof col-xs-12">
-
-        <div id="ninja">
-                        <img src="images\footProgramming.png" width="300" height="250" alt="teamwork"/>
-                        <p>
-                            В този курс ще ви научим да пишете код с краката си. Учени от университета в Бацова Махала доказаха, че Foot Programming е много по-ефективен начин за писане на софтуер, защото ръцете ви остават свободни за други особено приятни и стимулиращи дейности. Освен това писането на клавиатура с ръце е морално остаряло - практикува се вече повече от 60 години. А ние следваме най-новите технологични тенденции. Нека да оставим писането с ръце на феодалните старци в държавните университети. Ние ще ви подготвим за бъдещето още сега.
-                        </p>
-        </div>
-
+<div class="col-sm-12 prof">
+<div id="foot">
+   <img src="images\footProgramming.png" width="300" height="250" alt="foot" align="left" />
+    <p>
+В този курс ще ви научим да пишете код с краката си. Учени от университета в Бацова Махала доказаха, че Foot Programming е много по-ефективен начин за писане на софтуер, защото ръцете ви остават свободни за други особено приятни и стимулиращи дейности. Освен това писането на клавиатура с ръце е морално остаряло - практикува се вече повече от 60 години. А ние следваме най-новите технологични тенденции. Нека да оставим писането с ръце на феодалните старци в държавните университети. Ние ще ви подготвим за бъдещето още сега.
+    </p>
+</div>
     </div>
+
+</div>
 </div>
 
-<nav class="navbar navbar-inverse navbar-fixed-bottom">
-    <div class="container">
-        <div class="navbar navbar-right">
-            <button class="btn btn-default">Petar Genov</button>
-            <button class="btn btn-default">Engin Dzhemil</button>
-            <button class="btn btn-default">Iliya Iliev</button>
-            <button class="btn btn-default">Desislav Delchev</button>
-        </div>
-    </div>
+<nav class="navbar navbar-inverse navbar-static-bottom" role="navigation">
+           <div class="container">
+                      <div class="navbar-left">
+                      <a href="https://softuni.bg/"><img src="images/softuni.png"  alt="softuni_icon" height="45" width="45"></a> 
+<a href="https://www.facebook.com/SoftwareUniversity"><img src="images/facebook.png"  alt="facebook_icon" height="45" width="45"></a> 
+<a href="https://twitter.com/softunibg"><img src="images/twitter.png"  alt="twitter_icon" height="45" width="45"></a> 
+<a href="https://www.youtube.com/channel/UCPlL0QmMNVtubUKO2SqU4zQ" ><img src="images/youtube.png"  alt="youtube_icon" height="45" width="45"></a> 
+<a href="https://plus.google.com/+SoftuniBg" ><img src="images/googlep.png"  alt="googlep_icon" height="45" width="45"></a> 
+
+</div>
+           <h4 class="navbar-right">
+<a href="https://softuni.bg/users/profile/show/genov1824">&copy; Petar Genov, </a> 
+<a href="https://softuni.bg/users/profile/show/n_joy">Engin Dzhemil, </a> 
+<a href="https://softuni.bg/users/profile/show/bsdemon" >Iliya Iliev, </a> 
+<a href="https://softuni.bg/users/profile/show/desso">Desislav Delchev</a> 
+</h4>
+  </div>
 </nav>
 
 <script src="js/jquery-2.1.1.min.js"></script>

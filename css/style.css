@@ -107,8 +107,7 @@ fieldset[disabled] .btn-searchBtn.active {
 color: #A070FF;
  }
 .courses {
-    border-right: 1px solid #A070FF;
-padding-right: 15px;
+padding-right: 10px;
  }
 
 .article h4{
@@ -135,6 +134,9 @@ margin: 0px;
 }
 #news-content{
   min-height: 400px;
+}
+#navbar-collapse-1{
+padding-top: 30px;
 }
 
 @media(max-width:767px){
