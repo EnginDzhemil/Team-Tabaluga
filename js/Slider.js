@@ -1,5 +1,5 @@
 ﻿var image1 = new Image()
-image1.src = "images/slider/image1.jpg"
+image1.src = "images/slider/image1.JPG"
 
 var image2 = new Image()
 image2.src = "images/slider/image2.gif"
@@ -11,7 +11,7 @@ var image4 = new Image()
 image4.src = "images/slider/image4.gif"
 
 var image5 = new Image()
-image5.src = "images/slider/image5.jpg"
+image5.src = "images/slider/image5.JPG"
 
 var image6 = new Image()
 image6.src = "images/slider/image6.gif"
