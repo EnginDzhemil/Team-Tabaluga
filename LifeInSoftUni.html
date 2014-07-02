@@ -6,7 +6,6 @@
     <title>Life in TabtUni</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="css/Slider.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -56,7 +55,16 @@
                 <li><a href="bad.html">Некадърен програмист</a></li>
               </ul>
             </li>
-            <li><a href="Courses.html">Курсове</a></li>
+                        <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Обучения <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation" class="dropdown-header">Курсове</li>
+                <li role="presentation" class="divider"></li>
+                  <li role="presentation" class="dropdown-header">Rocket Track курсове</li>
+                  <li><a href="Moon.html">Moon Landing</a></li>
+                  <li><a href="Mars.html">Mars Landing</a></li>
+                  </ul>
+                </li>
             <li><a href="http://iliailiev.net/forum/main_forum.php">Форум</a></li>
             <li><a href="contacts.html">Контакти</a></li>
           </ul>
@@ -71,24 +79,25 @@
             </div>
         </div>
     <div class="container">
-    <div class="center-block" style="width:500px; margin-top:30px;">
+    <div class="center-block" style="width:500px; height:600px; margin-top:20px;">
     <img src="images/slider/image1.jpg" name="slide">
     </div>
-    <script type="text/javascript" src="js/Slider.js"></script>
+
   </div>
   
 <nav class="navbar navbar-inverse navbar-bottom">
            <div class="container">
            <div class="navbar navbar-right">
-<button class="btn btn-default">Petar Genov</button> 
-<button class="btn btn-default">Engin Dzhemil</button> 
-<button class="btn btn-default">Iliya Iliev</button> 
-<button class="btn btn-default">Desislav Delchev</button> 
+<a href="https://softuni.bg/users/profile/show/genov1824" class="btn btn-default">Petar Genov</a> 
+<a href="https://softuni.bg/users/profile/show/n_joy" class="btn btn-default">Engin Dzhemil</a> 
+<a href="https://softuni.bg/users/profile/show/bsdemon" class="btn btn-default">Iliya Iliev</a> 
+<a href="https://softuni.bg/users/profile/show/desso" class="btn btn-default">Desislav Delchev</a> 
 </div>
   </div>
 </nav>
 
 <script src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/Slider.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>
