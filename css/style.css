@@ -47,11 +47,51 @@ fieldset[disabled] .btn-searchBtn.active {
 
 }
 
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(../images/programming.jpg);
+    color: white;
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.jumbotron h2{
+    color: #FFF;
+    text-shadow: 3px 3px 5px rgba(150, 150, 150, 1);
+}
 .navbar-brand {
   font-size: 30px;
 }
-body{
-  background-color: #FFF;
+
+ .courses h4{
+color: #A070FF;
+ }
+.courses {
+    border-right: 1px solid #A070FF;
+padding-right: 15px;
+ }
+
+.article h4{
+color: #A070FF;
+ }
+ .article {
+    border-bottom: 1px solid #A070FF;
+padding-right: 15px;
+ }
+
+.course-article{
+  margin-top: 20px;
+}
+
+.course-article img{
+  padding-right: 10px;
+}
+
+.slider img{
+    width: 460px;
+    height: 460px;
+    border:2px solid black;
 }
 
 @media(max-width:767px){

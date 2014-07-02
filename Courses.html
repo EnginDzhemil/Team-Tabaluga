@@ -2,23 +2,121 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Courses</title>
-    <link rel="stylesheet" href="css/Courses.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabaluga University</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/Courses.css">
 
 </head>
-
 <body>
+<!-- Site Header and Navigation -->
+<nav class="navbar navbar-inverse navbar-top" role="navigation">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<div class="row">
+				<a class="navbar-brand" href="#">  <img style="max-width:100px; margin-top: -13px;max-height:100px;" src="images/tabaluga-1.png"  alt="logo">Tabaluga University</a>
+			</div>
+			</div>
 
-<div>
-    <h1>
-        <strong>Актуални курсове</strong>
-    </h1>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="row">
+					<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Търсене">
+					</div>
+					<button class="btn btn-searchBtn">Търси</button>
+					</form>
+				</div>
+				<div class="row">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Начало</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">За университета <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="Teachers.html">Преподаватели</a></li>
+								<li><a href="LifeInSoftUni.html">Живота в SoftUni</a></li>
+								<li><a href="Scholarship.html">Стипенидия</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Професии <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="ninja.html">Програмист-нинджа</a></li>
+								<li><a href="god.html">Programming God</a></li>
+								<li><a href="strong.html">Силен програмист</a></li>
+								<li><a href="bad.html">Некадърен програмист</a></li>
+							</ul>
+						</li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Курсове <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="Teamwork.html">Teamwork и личностни умения</a></li>
+                                <li><a href="bitwise.html">Побитово клатене</a></li>
+                                <li><a href="foot.html">Foot Programming</a></li>
+                            </ul>
+                        </li>
+						<li><a href="http://iliailiev.net/forum/main_forum.php">Форум</a></li>
+						<li><a href="contacts.html">Контакти</a></li>
+					</ul>
+				</div>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</div>
+</nav>
+
+<div class="jumbotron">
+           <div class="container">
+           <h2>
+           Актуални курсове
+           </h2>
+            </div>
+        </div>
+
+<div class="prof center-block" style="width:960px;">
+    <button class="btn btn-default" onclick="show(Teamwork);">Teamwork и личностни умения</button>
+    <button class="btn btn-default" onclick="show(bitwise);">Побитово клатене</button>
+    <button class="btn btn-default" onclick="show(foot);">Foot Programming</button>
+
+    <div id="Teamwork" style="visibility:hidden;splay:block;">
+        <p>
+            Курсът ще се провежда всеки петък от 20.00 часа в бирария &quot;4 Халби и един div&quot;. За да работите с колегите си ефективно в екип е нужно първо да се научите да пиете бира в синхрон с тях. В този курс доказани алкохолици в бранша ще ви преподават най-новите техники за пиене и чукане с чаши. След 2 литра и половина ще ви научим как да заваляте говора правилно.
+        </p>
+    </div>
+    <div id="bitwise" style="visibility:hidden;">
+        <p>
+            Сигурно си спомняте побитовото местене наляво или надясно от курса по С#. Това беше нищо в сравнение с новия курс &quot;Побитово клатене&quot;. Тук ще ви научим как бързо да местите битовете ту наляво, ту надясно, ту нагоре, ту надолу, ту на 398 градуса перпендикулярно на земната хипотенуза. По този начин се създава нова квантова енергия, а протоните и неутроните започват да вибрират. Така създаденият от вас софтуер започва да работи по-бързо.
+        </p>
+    </div>
+    <div id="foot" style="visibility:hidden;">
+        <p>
+            В този курс ще ви научим да пишете код с краката си. Учени от университета в Бацова Махала доказаха, че Foot Programming е много по-ефективен начин за писане на софтуер, защото ръцете ви остават свободни за други особено приятни и стимулиращи дейности. Освен това писането на клавиатура с ръце е морално остаряло - практикува се вече повече от 60 години. А ние следваме най-новите технологични тенденции. Нека да оставим писането с ръце на феодалните старци в държавните университети. Ние ще ви подготвим за бъдещето още сега.
+        </p>
+    </div>
+
+</div>
 </div>
 
-<div class="container">
-    <span data-title="Курсът ще се провежда всеки петък от 20.00 часа в бирария &quot;4 Халби и един div&quot;. За да работите с колегите си ефективно в екип е нужно първо да се научите да пиете бира в синхрон с тях. В този курс доказани алкохолици в бранша ще ви преподават най-новите техники за пиене и чукане с чаши. След 2 литра и половина ще ви научим как да заваляте говора правилно.">Teamwork и личностни умения</span>
-    <span data-title="Сигурно си спомняте побитовото местене наляво или надясно от курса по С#. Това беше нищо в сравнение с новия курс &quot;Побитово клатене&quot;. Тук ще ви научим как бързо да местите битовете ту наляво, ту надясно, ту нагоре, ту надолу, ту на 398 градуса перпендикулярно на земната хипотенуза. По този начин се създава нова квантова енергия, а протоните и неутроните започват да вибрират. Така създаденият от вас софтуер започва да работи по-бързо.">Побитово клатене</span>
-    <span data-title="В този курс ще ви научим да пишете код с краката си. Учени от университета в Бацова Махала доказаха, че Foot Programming е много по-ефективен начин за писане на софтуер, защото ръцете ви остават свободни за други особено приятни и стимулиращи дейности. Освен това писането на клавиатура с ръце е морално остаряло - практикува се вече повече от 60 години. А ние следваме най-новите технологични тенденции. Нека да оставим писането с ръце на феодалните старци в държавните университети. Ние ще ви подготвим за бъдещето още сега.">Foot Programming</span>
-</div>
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+	<div class="container">
+		<div class="navbar navbar-right">
+			<button class="btn btn-default">Petar Genov</button> 
+			<button class="btn btn-default">Engin Dzhemil</button> 
+			<button class="btn btn-default">Iliya Iliev</button> 
+			<button class="btn btn-default">Desislav Delchev</button> 
+		</div>
+	</div>
+</nav>
 
+<script src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
+</html>

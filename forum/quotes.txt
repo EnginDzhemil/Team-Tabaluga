@@ -1,0 +1,22 @@
+Programming Is Like Sex: One mistake and you have to support it for the rest of your life. (Michael Sinz)
+
+A real programmer can program C in any language.
+
+Theory is when you know something, but it doesn’t work. Practice is when something works, but you don’t know why. Programmers combine theory and practice: Nothing works and they don’t know why.
+
+The most amazing achievement of the computer software industry is its continuing cancellation of the steady and staggering gains made by the computer hardware industry.” (Henry Petroski)
+
+“Walking on water and developing software from a specification are easy if both are frozen.” – Edward V Berard
+
+There are only two kinds of languages: the ones people complain about and the ones nobody uses.
+
+“Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.” – Linus Torvalds
+
+One of my most productive days was throwing away 1000 lines of code. ~ Ken Thompson
+
+Deleted code is debugged code. ~ Jeff Sickel
+
+One of my favourites is: It’s compiling – mostly I’m slacking of
+
+If debugging is the process of removing bugs, then programming must be the process of putting them in. ~Author Unknown
+
