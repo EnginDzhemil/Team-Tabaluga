@@ -72,7 +72,7 @@ color: #A070FF;
 padding-right: 15px;
  }
 
-  .article h4{
+.article h4{
 color: #A070FF;
  }
  .article {
@@ -80,6 +80,13 @@ color: #A070FF;
 padding-right: 15px;
  }
 
+.course-article{
+  margin-top: 20px;
+}
+
+.course-article img{
+  padding-right: 10px;
+}
 
 @media(max-width:767px){
 .navbar-brand {
