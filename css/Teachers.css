@@ -9,17 +9,22 @@
 }
 
 .flip3D > .front{
-     position: absolute;
-     -webkit-transform: perspective( 600px ) rotateY( 0deg );
-     transform: perspective( 600px ) rotateY( 0deg );
-     background: black;
-     width: 160px;
-     height: 160px;
-     border-radius: 7px;
-     -webkit-backface-visibility: hidden;
-     backface-visibility: hidden;
-     transition: -webkit-transform .5s linear 0s;
-     transition: transform .5s linear 0s;
+    position: absolute;
+    -webkit-transform: perspective( 600px ) rotateY( 0deg );
+    transform: perspective( 600px ) rotateY( 0deg );
+    background: black;
+    width: 160px;
+    height: 160px;
+    border-radius: 11px; 
+    -moz-border-radius: 11px; 
+    -webkit-border-radius: 11px; 
+    border: 5px groove #A070FF;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
  }
 
 .flip3D > .back {
@@ -29,7 +34,12 @@
     background: black;
     width: 160px;
     height: 160px;
-    border-radius: 7px;
+    border-radius: 11px; 
+    -moz-border-radius: 11px; 
+    -webkit-border-radius: 11px; 
+    border: 5px groove #A070FF;
+    margin-right: 30px;
+    margin-bottom: 30px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: -webkit-transform .5s linear 0s;
