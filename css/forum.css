@@ -1,0 +1,67 @@
+table {
+	color:white;
+	width: 90%;
+	border: 0px;
+	align: center;
+	cellpadding: 3;
+	cellspacing: 1;
+	background-color: #640AC8;
+	border-radius:5px;
+	}
+	
+table tr  td{
+	border: 1px solid #A070FF;
+		
+
+}	
+
+#number {
+	width: 6%;
+	align: center;
+	background-color: #640AC8;
+}
+
+#topic {
+	width: 53%;
+	align: center;
+	background-color: #640AC8;
+	
+}
+
+#views{
+	width:15%;
+	align: center;
+	background-color: #640AC8;
+}
+
+#replies{
+	width: 13%;
+	align: center;
+	background-color: #640AC8;
+}
+
+#date{
+	width: 13%;
+	align: center;
+	background-color: #640AC8;
+}
+
+.tdtext{
+	color:black;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+
+#create{
+	border-radius: 5px;
+	padding:5px;
+	color:white;
+	background-color: #640AC8;
+}
+
+#create:hover{
+	text-decoration:none;
+	color:white;
+	background-color:#A070FF;
+}
+
