@@ -1,5 +1,4 @@
-﻿
-.flip3D {
+﻿.flip3D {
     width: 160px;
     height: 160px;
     margin: 30px;
@@ -57,7 +56,6 @@
 }
 
 #one-back {
-    
     vertical-align:bottom;
     background:url("../images/teachers/B01.jpg") no-repeat;
 }

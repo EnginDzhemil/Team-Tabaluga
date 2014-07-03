@@ -1,13 +1,15 @@
 ﻿.scolar img{
-border-radius: 11px; 
--moz-border-radius: 11px; 
--webkit-border-radius: 11px; 
-border: 10px groove #A070FF;
-}
+    border-radius: 11px; 
+    -moz-border-radius: 11px; 
+    -webkit-border-radius: 11px; 
+    border: 10px groove #A070FF;
+    }
+
 #status{
     margin: 10px;
     font-size: 30px;
-}
+    }
+
 .dice{
     float: left;
     width: 50px;
@@ -21,7 +23,8 @@ border: 10px groove #A070FF;
     text-align: center;
     display: block;
     color: #FFF;
-}
+    }
+
 .dice1{
     float: left;
     height: 50px;
@@ -31,8 +34,7 @@ border: 10px groove #A070FF;
     font-size: 24px;
     text-align: center;
     display: block;
-}
-
+    }
 
 .student{
     float: left;
@@ -45,28 +47,28 @@ border: 10px groove #A070FF;
     font-size: 24px;
     text-align: center;
     }
+
 .student2{
     float: left;
     margin-top:20px;
-}
+    }
 
 .btnScolarship{
-        margin-top: 12px;
+    margin-top: 12px;
     width: 250px;
     height: 50px;
-}
+    }
 
 .student1 span{
     margin-top: 12px;
     font-size: 24px;
     margin-left: 5px;
-}
-
+    }
 
 #water{
     margin-top: -325px;
-}
+    }
 
 #game {
     float: left;
-}
+    }  
