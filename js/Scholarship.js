@@ -15,14 +15,14 @@ function rollDice() {
     var diceTotal = d1 + d2;
     die1.innerHTML = d1;
     die2.innerHTML = d2;
-    status.innerHTML = "I have " + diceTotal + "!"
+    status.innerHTML = ""
     student.innerHTML = count;
     if (d1 == d2) {
-        status.innerHTML += " DOUBLES! YEAH! You got Free Education!!!"
+        status.innerHTML += " DOUBLES! YEAH! You got Free Education!"
         document.getElementById("win").style.visibility = "visible";
     }
     else {
         document.getElementById("water").style.visibility = "visible";
-        status.innerHTML = "I don't have Double! I Have " + diceTotal + "! DAMN!!!"
+        status.innerHTML = "DAMN! I don't have Double! "
     }
 }
