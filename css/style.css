@@ -162,11 +162,14 @@ fieldset[disabled] .btn-searchBtn.active {
 
 @media(max-width:1200px){
   #navbar-collapse-1{
-    padding-top: 100px;
+    padding-top: 60px;
   }
   .navbar-brand {
     font-size: 25px;
   }
+  .navbar-nav li{
+  font-size: 14px;
+}
 }
 
 @media(max-width:768px){
@@ -180,6 +183,9 @@ fieldset[disabled] .btn-searchBtn.active {
     font-size: 20px;
   }
   .navbar-brand img{
+    margin-top: -20px;
+  }
+    .navbar-brand{
     margin-top: -20px;
   }
 }
