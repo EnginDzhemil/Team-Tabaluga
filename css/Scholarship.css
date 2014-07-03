@@ -9,7 +9,19 @@
     margin: 10px;
     font-size: 30px;
     }
+.tableScolar{
+	margin-top: 20px;
 
+}
+.tableScolar td{
+	padding: 20px;
+
+}
+.tableScolarTr{ 
+    -moz-border-radius: 11px; 
+    -webkit-border-radius: 11px; 
+    border-bottom: 2px dashed #A070FF;
+}
 .dice{
     float: left;
     width: 50px;
